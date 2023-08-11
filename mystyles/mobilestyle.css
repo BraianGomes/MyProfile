@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    list-style: none;
+}
+
+body,html {
+        width: 100vw;
+        height: 100vh;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.575) url(../imagens/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+body > main > p{
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.678);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div#self img{
+    display: flex;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.459);
+    border-radius: 50%;
+}
+
+header > ul{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+#navigation{
+    display: flex;
+}
+
+#navigation a{
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px 30px;
+}
+
+#navigation a:hover{
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+section{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10px 10px;
+}
+
+#logo{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+    cursor: pointer;
+}
+
+#git{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+    cursor: pointer;
+}
+
+#link{
+    width: 50px;
+    margin: 10px;
+    border-radius: 20%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+    cursor: pointer;
+}

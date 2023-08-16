@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#carousel{
+    position: relative;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+#box-wrapper{
+    overflow-x: auto;
+}
+
+#box{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.arrow-left,
+.arrow-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 40px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    border: none;
+    cursor: pointer;
+    transition: all 600ms ease-in-out;
+}
+
+.arrow-right{
+    left: 0;
+    right: auto;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left:hover,
+.arrow-right:hover{
+    opacity: 1;
+}
+

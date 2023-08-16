@@ -8,7 +8,7 @@
     position: relative;
     padding: 15px;
     margin: 0 auto;
-    max-width: 340px;
+    max-width: 400px;
 }
 
 #box-wrapper{
@@ -50,4 +50,28 @@
 .arrow-right:hover{
     opacity: 1;
 }
+
+.item{
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    border: 2px solid white;
+    transition: all 600ms ease-in-out;
+}
+
+.current-item{
+    opacity: 1;
+    border: 2px solid black;
+}
+
+#box-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+#box-wrapper{
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
+
 

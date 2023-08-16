@@ -11,6 +11,8 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
 
+    <script src="script.js"></script>
+
 </head>
 <body>
     <main>
@@ -28,10 +30,12 @@
             </ul>
         </header>
 
-        <h1>About me:</h1>
-
-        <p>
+        <div>
+            <h1>About me:</h1>
+            <p>
             Highly skilled and creative Front-End Developer with a strong command of HTML5, CSS3, and JavaScript. Capable of seamlessly blending functional requirements with artistic elements to create exceptional user interfaces. Honest, hardworking, and committed to delivering clean and efficient code. Excellent leadership skills complement my ability to perform specified tasks with precision.</p>
+
+        </div>
 
         <section id="network">
 
@@ -44,6 +48,24 @@
             <a href="https://www.linkedin.com/in/braian-de-carvalho-gomes-95aa74281/" target="_blank"> <img id="link" src="imagens/logo.linkedin.jpg" alt="Linkedin"> </a><br>
 
         </section>
+
+        <div id="carousel">
+            <button id="arrow-left control" aria-label="Previous image">--</button>
+            <button id="arrow-right control" aria-label="Next image">--</button>
+
+            <div id="box-wrapper">
+                <div id="box">
+                    <img id="item current-item" src="imagens/logo-github.jpg" alt="##########">
+                    <img id="item current-item" src="imagens/logo-facebook.jpg" alt="##########">
+                    <img id="item current-item" src="imagens/logo-instagram.jpg" alt="##########">
+                    <img id="item current-item" src="imagens/logo-youtube.jpg" alt="##########">
+
+                </div>
+
+            </div>
+            <a class="left button" href=""></a>
+            <a class="right button"  href=""></a>
+        </div>
     
     </main>
     

@@ -1,149 +1,91 @@
 @charset "UTF-8";
-
+    
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
     list-style: none;
 }
 
 body{
-    width: 100%;
+    margin: 10px;
+    letter-spacing: 1px;
+    width: 95%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.575) url(../imagens/background.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-body > main > p{
-    margin: 10px;
-    letter-spacing: 1px;
-}
-
 main{
     background-color: rgba(255, 255, 255, 0.894);
     width: 90vw;
+    height: 80vh;
+    max-width: 750px;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
 }
 
-div#self img{
+ul#row1{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+    align-items: start;
+    text-align: center;
+}
+
+div#self >img{
+    display: flex;
+    text-align: right;
+     
+}
+
+ul#row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+div#self > img{
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.497);
     border-radius: 50%;
 }
 
-header > ul{
-    width: 100%;
-    display: flex;
-    margin: 20px 0px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 10px;
+#git,
+#link{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
-#navigation{
-    display: flex;
+#git:hover,
+#link:hover{
+    border: 2px solid white;
 }
 
 #navigation a{
     color: black;
     font-size: 1em;
     font-weight: bold;
-    margin: 0px 30px;
 }
 
-#navigation a:hover{
-    color: white;
-    background-color: black;
-    padding: 5px;
-    border-radius: 5px;
+div#about > h1{
+    font-size: 1em;
 }
 
-section{
-    display: flex;
+div#about > p{
+    font-size: 15px;
     margin: auto;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 10px 10px;
+    padding: 10px;
 }
-
-#logo{
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
-    cursor: pointer;
-}
-
-#git{
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
-    cursor: pointer;
-}
-
-#link{
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
-    cursor: pointer;
-}
-
-#carousel{
-    position: relative;
-    padding: 15px;
-    margin: 0 auto;
-    max-width: 640px;
-}
-
-#box-wrapper{
-    overflow-x: auto;
-}
-
-#box{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 15px;
-}
-
-.arrow-left,
-.arrow-right{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 40px;
-    line-height: 250px;
-    width: 40px;
-    text-align: center;
-    color: white;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.1;
-    border: none;
-    cursor: pointer;
-    transition: all 600ms ease-in-out;
-}
-
-.arrow-right{
-    left: 0;
-    right: auto;
-    background: linear-gradient(to right, transparent 0%, black 200%);
-}
-
-.arrow-left:hover,
-.arrow-right:hover{
-    opacity: 1;
-}
-

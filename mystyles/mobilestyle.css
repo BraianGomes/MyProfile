@@ -23,7 +23,7 @@ body > main > p{
 }
 
 main{
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: rgba(255, 255, 255, 0.894);
     width: 90vw;
     margin: auto;
     border-radius: 10px;
@@ -35,7 +35,7 @@ div#self img{
     margin: auto;
     width: 200px;
     height: 200px;
-    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.459);
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.497);
     border-radius: 50%;
 }
 
@@ -92,9 +92,10 @@ section{
 }
 
 #link{
+    height: 50px;
     width: 50px;
     margin: 10px;
-    border-radius: 20%;
+    border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
     cursor: pointer;
 }

@@ -59,6 +59,7 @@ ul#row2{
 }
 
 #git,
+#gmail,
 #link{
     height: 45px;
     width: 45px;
@@ -68,6 +69,7 @@ ul#row2{
 }
 
 #git:hover,
+#gmail:hover,
 #link:hover{
     border: 2px solid white;
     transform: translateY(-8px);

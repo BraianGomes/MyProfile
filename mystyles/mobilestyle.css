@@ -32,19 +32,24 @@ div#network{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 1em;
     align-items: center;
     text-align: center;
 }
 
 ul#row1{
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#row1{
+    margin: 20px;
 }
 
 img#self{
     width: 150px;
     height: 150px;
+    margin: auto;
     box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.497);
     border-radius: 50%;
 }

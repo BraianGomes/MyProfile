@@ -70,12 +70,7 @@ ul#row2{
 #git:hover,
 #link:hover{
     border: 2px solid white;
-}
-
-a{
-    color: black;
-    font-size: 1em;
-    font-weight: bold;
+    transform: translateY(-8px);
 }
 
 section > h1{

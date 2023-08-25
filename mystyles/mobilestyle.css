@@ -4,8 +4,15 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     list-style: none;
+}
+
+:root{
+    --darkpurple:#7614F4;
+    --lightpurple:#AB6BFF;
+    --darkyellow:#A8A500;
+    --lightyellow:#F5F014;
 }
 
 body{
@@ -13,13 +20,13 @@ body{
     letter-spacing: 1px;
     width: 95%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.575) url(../imagens/background.jpg) no-repeat;
+    background-color: var(--lightyellow);
     background-size: cover;
     background-position: center center;
 }
 
 main{
-    background-color: rgba(255, 255, 255, 0.894);
+    background-color: var(--darkpurple);
     width: 90vw;
     height: 80vh;
     max-width: 750px;
@@ -50,12 +57,55 @@ img#self{
     width: 150px;
     height: 150px;
     margin: auto;
-    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.497);
+    box-shadow: 8px 2px 5px rgba(255, 255, 0, 0.75);
     border-radius: 50%;
 }
 
-ul#row2{
-    padding: 20px;
+div#row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    max-width: 768px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: var(--lightyellow);
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all .3s ease;
+    background-color: rgba(255, 255, 0, 0.435);
+}
+
+.link::before{
+    width: 0px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.link:hover::before{
+    width: 100%;
 }
 
 #git,
@@ -71,15 +121,19 @@ ul#row2{
 #git:hover,
 #gmail:hover,
 #link:hover{
-    border: 2px solid white;
+    border: 2px solid var(--lightyellow);
     transform: translateY(-8px);
 }
 
 section > h1{
+    color: var(--lightyellow);
+    font-weight: bold;
     font-size: 1em;
 }
 section > p{
+    color: var(--lightyellow);
     font-size: 15px;
+    font-weight: light;
     margin: auto;
     padding: 10px;
 }

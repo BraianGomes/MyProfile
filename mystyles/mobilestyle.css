@@ -28,42 +28,35 @@ main{
     padding: 10px;
 }
 
-ul#row1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1em;
-    align-items: start;
-    text-align: center;
-}
-
-div#self >img{
-    display: flex;
-    text-align: right;
-     
-}
-
-ul#row2{
+div#network{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
     align-items: center;
     text-align: center;
-    padding: 20px;
 }
 
-div#self > img{
-    margin: auto;
+ul#row1{
+    padding: 30px;
+}
+
+img#self{
     width: 150px;
     height: 150px;
     box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.497);
     border-radius: 50%;
 }
 
+ul#row2{
+    padding: 20px;
+}
+
 #git,
 #link{
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -74,17 +67,16 @@ div#self > img{
     border: 2px solid white;
 }
 
-#navigation a{
+a{
     color: black;
     font-size: 1em;
     font-weight: bold;
 }
 
-div#about > h1{
+section > h1{
     font-size: 1em;
 }
-
-div#about > p{
+section > p{
     font-size: 15px;
     margin: auto;
     padding: 10px;

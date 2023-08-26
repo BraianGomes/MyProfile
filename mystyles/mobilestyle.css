@@ -61,9 +61,7 @@ ul#row1{
 div#row2 > ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    text-align: center;
     gap: 5px;
     max-width: 768px;
 }
@@ -129,7 +127,7 @@ span{
 
 #git:hover,
 #link:hover{
-    border: 2px solid var(--lightyellow);
+    border: 3px solid var(--lightyellow);
     transform: translateY(-8px);
 }
 

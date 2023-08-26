@@ -109,7 +109,7 @@ div#row2{
 }
 
 #git,
-#gmail,
+#call,
 #link{
     height: 45px;
     width: 45px;
@@ -119,10 +119,18 @@ div#row2{
 }
 
 #git:hover,
-#gmail:hover,
+#call:hover,
 #link:hover{
     border: 2px solid var(--lightyellow);
     transform: translateY(-8px);
+}
+
+ul#row1 > li > p{
+    display: none;
+}
+
+ul#row1 > li > p:hover{
+    display: block;
 }
 
 section > h1{

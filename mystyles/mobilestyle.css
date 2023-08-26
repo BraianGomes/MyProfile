@@ -73,6 +73,7 @@ span{
 .button{
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     color: var(--lightyellow);
     width: 150px;
@@ -80,6 +81,7 @@ span{
     padding: 10px;
     margin-top: 10px;
     overflow: hidden;
+    border: 2px solid white;
     text-decoration: none;
     border-radius: 20px;
     cursor: pointer;
@@ -132,7 +134,7 @@ span{
 }
 
 section > h1{
-    color: var(--lightyellow);
+    color: white;
     font-weight: bold;
     font-size: 1em;
 }

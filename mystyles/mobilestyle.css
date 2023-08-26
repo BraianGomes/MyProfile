@@ -68,6 +68,10 @@ div#row2 > ul{
     max-width: 768px;
 }
 
+span{
+    margin-right: 10px;
+}
+
 .button{
     display: flex;
     justify-content: center;

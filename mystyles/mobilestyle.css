@@ -47,7 +47,7 @@ ul#row1{
     display: flex;
     flex-direction: column;
     margin: 30px 0px 0px 20px;
-    gap: 3em;
+    gap: 2em;
 }
 
 #self{
@@ -110,7 +110,8 @@ span{
 }
 
 #git,
-#link{
+#link,
+#logo{
     height: 45px;
     width: 45px;
     border-radius: 50%;
@@ -128,7 +129,8 @@ span{
 }
 
 #git:hover,
-#link:hover{
+#link:hover,
+#logo:hover{
     border: 2px solid var(--lightyellow);
     transform: translateY(-8px);
 }

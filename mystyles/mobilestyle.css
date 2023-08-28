@@ -128,15 +128,14 @@ section{
 
 section > h1{
     color: white;
-    text-decoration: underline;
     padding: 10px;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 section > p{
     color: var(--lightyellow);
-    font-size: 15px;
+    font-size: 0.8em;
     font-weight: light;
     margin: auto;
     padding: 10px;

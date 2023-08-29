@@ -41,7 +41,47 @@ section{
     justify-content: center;
     height: 100vh;
     scroll-snap-align: start;
+}
 
+#exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+    align-items: top;
+    gap: 1em;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+#self{
+    width: 130px;
+    height: 130px;
+    margin-top: 15px;
+    box-shadow: 6px 2px 5px rgba(23, 23, 17, 0.538);
+    border-radius: 10%;
+}
+
+div#exp > div > h1{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+div#exp > div > p{
+    color: var(--lightyellow);
+    font-size: 0.8em;
+    font-weight: light;
+    margin: auto;
+    padding: 10px;
+}
+
+#logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90vw;
 }
 
 #page1{
@@ -87,11 +127,6 @@ section{
     background-color: rgba(42, 5, 128, 0.524);
 }
 
-#exp{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
 .button{
     display: flex;
     justify-content: center;
@@ -131,13 +166,6 @@ section{
     width: 100%;
 }
 
-#self{
-    width: 130px;
-    height: 130px;
-    box-shadow: 6px 2px 5px rgba(23, 23, 17, 0.538);
-    border-radius: 10%;
-}
-
 #git,
 #link,
 #logo{
@@ -157,22 +185,7 @@ section{
 
 .logo{
     width: 70px;
-    height: 50px;
-}
-
-section > h1{
-    color: white;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-section > p{
-    color: var(--lightyellow);
-    font-size: 0.8em;
-    font-weight: light;
-    margin: auto;
-    padding: 10px;
+    height: 60px;
 }
 
 footer{

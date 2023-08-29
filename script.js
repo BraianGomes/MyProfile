@@ -1,2 +1,3 @@
-const sliders = document.querySelector(".box");
-var scrollPerClick;
+function section() {
+    document.getElementById('row2')
+}

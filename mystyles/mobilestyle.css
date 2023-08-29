@@ -48,10 +48,10 @@ section{
     flex-direction: row;
     justify-content: center;
     text-align: start;
-    align-items: top;
+    align-items: first baseline;
     gap: 1em;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 #self{
@@ -75,6 +75,11 @@ div#exp > div > p{
     font-weight: light;
     margin: auto;
     padding: 10px;
+}
+
+.logo{
+    width: 70px;
+    height: 60px;
 }
 
 #logos{
@@ -168,7 +173,7 @@ div#exp > div > p{
 
 #git,
 #link,
-#logo{
+#bcodeg{
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -178,14 +183,9 @@ div#exp > div > p{
 
 #git:hover,
 #link:hover,
-#logo:hover{
+#bcodeg:hover{
     border: 2px solid white;
     transform: translateY(-8px);
-}
-
-.logo{
-    width: 70px;
-    height: 60px;
 }
 
 footer{

@@ -16,13 +16,4 @@
         --darkyellow:#A8A500;
         --lightyellow:#F5F014;
     }
-    
-    #self{
-        margin:auto;
-        width: 180px;
-        height: 180px;
-        box-shadow: 6px 2px 5px rgba(23, 23, 17, 0.538);
-        border-radius: 50%;
-    }
-    
 }

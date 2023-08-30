@@ -78,8 +78,8 @@ div#exp > div > p{
 }
 
 .logo{
-    width: 70px;
-    height: 60px;
+    width: 90px;
+    height: 70px;
 }
 
 #logos{
@@ -119,9 +119,8 @@ div#exp > div > p{
     position: fixed;
     top: 0;
     left: 0;
-    width: 95%;
+    width: 100vw;
     height: 60px;
-    font-size: 10px;
     z-index: 1;
 }
 
@@ -131,7 +130,7 @@ div#exp > div > p{
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    background-color: rgba(42, 5, 128, 0.524);
+    background-color: black;
 }
 
 .button{
@@ -140,12 +139,12 @@ div#exp > div > p{
     align-items: center;
     position: relative;
     color: var(--lightyellow);
-    width: 80px;
+    width: 100px;
     height: 30px;
     padding: 10px;
-    margin-top: 10px;
+    font-size: 12px;
     overflow: hidden;
-    border: 2px solid white;
+    border: 2px solid var(--lightyellow);
     text-decoration: none;
     border-radius: 20px;
     cursor: pointer;

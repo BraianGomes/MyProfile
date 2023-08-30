@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Oxygen', sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
 :root{
@@ -32,7 +33,7 @@ header#row2{
     z-index: 100;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -5%;
     width: 100%;
     height: 60px;
     padding: 10px 5%;
@@ -40,10 +41,12 @@ header#row2{
 }
 
 header#row2 > img{
-    width: 100px;
-    height: 100px;
-    border: 50%;
-    margin-top: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--standardcolor);
+    margin-top: 40px;
+    margin-left: 15px;
 }
 
 #navbar > a{
@@ -99,10 +102,31 @@ header#row2 > img{
     margin-top: 10px;
 }
 
+div#self{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
 div#self > img{
     width: 200px;
     height: 250px;
     border-radius: 10%;
+}
+
+#cv{
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    padding: 12px 28px;
+    margin-top: 20px;
+    background-color: var(--standardcolor);
+    border-radius: 45px;
+    box-shadow: 0 0 12px var(--standardcolor);
+    font-size: 18px;
+    color: var(--bgcolor);
+    font-weight: bold;
 }
 
 .interface{
@@ -179,33 +203,61 @@ div#exp > div > p{
     background-color: red;
 }
 
-#page4{
+section#page4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
     background-color: white;
+    color: black;
     height: 20vh;
 }
 
-#row1{
+#social{
     display: flex;
     flex-direction: row;
+    gap: 2em;
+}
+
+#social > a{
+    display: inline-flex;
     justify-content: center;
-    gap: 4em;
-}
-
-#git,
-#link,
-#bcodeg{
-    height: 40px;
+    align-items: center;
     width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--standardcolor);
     border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
+    font-size: 20px;
+    color: var(--standardcolor);
+    transition: .4s ease;
 }
 
-#git:hover,
-#link:hover,
-#bcodeg:hover{
-    border: 2px solid white;
-    transform: translateY(-8px);
+#social > a:hover{
+    background-color: var(--standardcolor);
+    color: var(--bgcolor);
+    box-shadow: 0 0 20px var(--standardcolor);
+}
+
+#contacts{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--standardcolor);
+    background: transparent;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#contacts > p{
+    padding: 10px;
+    font-weight: bold;
+    transition: .4s ease;
+}
+
+#contacts > p:hover{
+        color: var(--bgcolor);
 }
 
 footer{

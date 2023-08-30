@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 <link rel="stylesheet" href="mystyles/mobilestyle.css" media="all">
 
 <link rel="stylesheet" href="media-queries/allstyle.css">
@@ -26,31 +28,38 @@
         <header id="row2">
             <img src="imagens/android-chrome-192x192.png" alt="">
                 <nav id="navbar">
-                    <a class="button link" href="index.html">Home</a>
-                    <a class="button link" href="imagens/BraianGomesResume.rtf.pdf" target="_blank">Resume</a>
-                    <a class="button link" href="#page2">Projects</a>
-                    <a class="button link" href="#row1"><span class="material-symbols-outlined">call</span>Contacts</a>
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#page2">Projects</a>
+                    <a href="#row1">Contacts</a>
                 </nav>
         </header>
 
-        
 
             <section id="page1">    
                     <div id="page1-content">
                         <h3> Hi everyone</h3> 
                         <h1>Braian de Carvalho Gomes here</h1>
                         <h3>And I'm a <span>Front End Developer</span></h3>
-                
-                        <p>Experienced Front-End Developer proficient in HTML5, CSS3, and JavaScript. Expert at harmonizing functionality and aesthetics for outstanding user interfaces. Diligent, honest, and skilled in clean, efficient code. Strong leader with precise task execution.<p>
+                        <a href="imagens/BraianGomesResume.rtf.pdf" target="_blank" id="cv">Resume</a>
                     </div>
 
                     <div id="self">
                         <img src="imagens/20230709_161002.jpg" alt="My Self">
                     </div>
-
+                    
             </section>
+
+            
         
             <section id="page2">
+                <p>Experienced Front-End Developer proficient in HTML5, CSS3, and JavaScript. Expert at harmonizing functionality and aesthetics for outstanding user interfaces. Diligent, honest, and skilled in clean, efficient code. Strong leader with precise task execution.<p>
+            </section>
+        
+        
+        
+            <section id="page3">
                 <div id="logos">
                     <img id="logo5" src="imagens/html5-logo.png" alt="Logo HTML5">
                     <img id="logo3" src="imagens/css3-logo.png" alt="Logo CSS3">
@@ -58,19 +67,16 @@
                 </div>
             </section>
         
-        
-        
-            <section id="page3">
-                <p>page 3</p>
-        
-            </section>
-        
             <section id="page4">
-                    <ul id="row1">
-                        <li><a href="https://github.com/BraianGomes" target="_blank"><img id="git" src="imagens/logo-github.jpg" alt="GitHub"></a></li>
-                        <li><a href="https://www.linkedin.com/in/braian-de-carvalho-gomes-95aa74281/" target="_blank"><img id="link" src="imagens/linkedin_318-157468.avif" alt="Linkedin"> </a></li>
-                        <li><img id="bcodeg" src="imagens/android-chrome-192x192.png" alt="My Projects"></li>
-                    </ul>
+            <div id="social">
+                <a href="https://github.com/BraianGomes" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/braian-de-carvalho-gomes-95aa74281/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <div id="contacts">
+                <p><i class='bx bx-phone'></i> 0411 910 758</p>
+                <p><i class='bx bx-envelope'></i> gomes.braian88@gmail.com</p>
+            </div>                                      
             </section>
 
         </div>

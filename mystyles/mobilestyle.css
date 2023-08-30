@@ -9,11 +9,13 @@
 }
 
 :root{
-    --darkpurple:#7614F4;
-    --lightpurple:#AB6BFF;
-    --darkyellow:#A8A500;
-    --lightyellow:#F5F014;
+    --bgcolor:#570000;
+    --standardcolor:#330F0F;
+    --darkcolor:#0A0000;
+    --middlebrown:#5C1010;
+    --redcolor:#E00000;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -21,7 +23,7 @@ html{
 
 body{
     letter-spacing: 1px;
-    width: 100vw;
+
 }
 
 .interface{
@@ -53,52 +55,69 @@ section{
 }
 
 #self{
+    position: absolute;
     width: 130px;
-    height: 130px;
-    margin-top: 15px;
-    box-shadow: 6px 2px 5px rgba(23, 23, 17, 0.538);
+    height: 200px;
     border-radius: 10%;
+    background: transparent;
+    transition: 3s;
+}
+
+#self:hover{
+    background-color: red;
+    opacity: .8;
 }
 
 div#exp > div > h1{
     color: white;
     padding: 10px;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 div#exp > div > p{
-    color: var(--lightyellow);
-    font-size: 0.8em;
+    color: white;
+    font-size: 1em;
     font-weight: light;
     margin: auto;
     padding: 10px;
-}
-
-.logo{
-    width: 90px;
-    height: 70px;
 }
 
 #logos{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 90vw;
+    align-items: center;
+    gap: 3em;
+}
+
+#logo5{
+    width: 100px;
+    height: 80px;
+}
+
+#logo3{
+    width: 100px;
+    height: 100px;
+}
+
+#logoj{
+    width: 100px;
+    height: 80px;
 }
 
 #page1{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, #AB6BFF, #7614F4);
+    background-color: var(--darkcolor);
 }
 
 #page2{
-    background-image: linear-gradient(to top, #A8A500, #F5F014);
+    background-color: var(--bgcolor);
 }
 
 #page3{
-    background-image: linear-gradient(to top, #AB6BFF, #7614F4);
+    background-color: var(--middlebrown);
 }
 
 #page4{
@@ -153,7 +172,7 @@ div#exp > div > p{
     width: 100%;
     height: 100%;
     transition: all .3s ease;
-    background-color: rgba(255, 255, 255, 0.236);
+    background-color: rgba(255, 255, 255, 0.123);
 }
 
 .link::before{

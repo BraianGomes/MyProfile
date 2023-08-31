@@ -64,12 +64,27 @@ body{
 }
 
 #navbar > a{
+    display: inline-block;
     font-size: 15px;
     font-weight: bold;
     color: var(--standardcolor);
     text-decoration: none;
     padding: 5px;
     transition: .3s;
+    animation: slideRightNav .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes slideRightNav {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
 }
 
 #navbar > a:hover{

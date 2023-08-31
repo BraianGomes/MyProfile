@@ -35,7 +35,7 @@ section{
     left: 0;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    height: 100vh;
     scroll-snap-align: start;
 }
 

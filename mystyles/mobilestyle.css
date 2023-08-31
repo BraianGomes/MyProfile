@@ -15,15 +15,28 @@
     --textcolor:#00EBA4;
 }
 
-
-html{
-    scroll-behavior: smooth;
-    background-color: black;
-}
-
 body{
     letter-spacing: 0.7px;
     color: white;
+    background-color: var(--bgcolor);
+    scroll-behavior: smooth;
+}
+
+#interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    scroll-snap-align: start;
 }
 
 #navbar{
@@ -93,7 +106,7 @@ body{
 
 #page1{
     display: flex;
-    justify-content: first baseline;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     position: relative;
@@ -143,14 +156,7 @@ body{
     }
 }
 
-div#self{
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-}
-
-div#self > img{
+div#self> img{
     width: 200px;
     height: 250px;
     border-radius: 10%;
@@ -197,23 +203,6 @@ div#self > img{
     font-weight: bold;
 }
 
-.interface{
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-}
-
-section{
-    display: flex;
-    position: sticky;
-    top: 0;
-    left: 0;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    scroll-snap-align: start;
-}
-
 #logos{
     display: flex;
     flex-direction: row;
@@ -250,7 +239,6 @@ section#projects{
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
-    background-color: white;
     color: black;
     height: 20vh;
 }
@@ -305,4 +293,6 @@ section#projects{
 footer{
     font-size: 15px;
     text-align: center;
+    color: var(--standardcolor);
+    padding: 10px;
 }

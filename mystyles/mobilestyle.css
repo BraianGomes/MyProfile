@@ -43,8 +43,10 @@ section{
 
 #navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     gap: 0.7em;
     z-index: 100;
     position: fixed;
@@ -57,18 +59,16 @@ section{
 }
 
 #navbar > img{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 2px solid var(--standardcolor);
-    margin-top: 60px;
-    margin-left: 20px;
-    animation: slideRight 1s ease forwards;
+    animation: slideRight .6s ease forwards;
 }
 
 @keyframes slideRight {
     0% {
-        transform: translateX(-100px);
+        transform: translateX(100px);
         opacity: 0;
     }
 
@@ -237,10 +237,6 @@ section#skills{
 }
 
 section#projects{
-    background-color: var(--standardcolor);
-}
-
-section#projects{
     background-color: var(--bgcolor);
     display: flex;
     flex-direction: column;
@@ -260,12 +256,12 @@ section#projects{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: transparent;
     border: 2px solid var(--standardcolor);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--standardcolor);
     transition: .4s ease;
 }
@@ -273,17 +269,18 @@ section#projects{
 #social > a:hover{
     background-color: var(--standardcolor);
     color: var(--bgcolor);
-    box-shadow: 0 0 20px var(--standardcolor);
+    box-shadow: 0 0 30px var(--standardcolor);
 }
 
 #contacts{
     display:inline-flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: transparent;
     color: var(--standardcolor);
     background: transparent;
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
 }
 

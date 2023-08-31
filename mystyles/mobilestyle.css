@@ -16,11 +16,13 @@
 }
 
 body{
+    width: 100vw;
     letter-spacing: 0.7px;
     color: white;
     background-color: var(--bgcolor);
     scroll-behavior: smooth;
 }
+
 
 #interface{
     height: 100vh;
@@ -82,7 +84,7 @@ section{
     font-weight: bold;
     color: var(--standardcolor);
     text-decoration: none;
-    padding: 5px;
+    padding: 2px;
     transition: .3s;
     animation: slideRightNav .5s ease forwards;
     animation-delay: calc(.2s * var(--bar));
@@ -226,15 +228,20 @@ div#self> img{
     height: 80px;
 }
 
-#about{
-    background-color: yellow;
+section#about{
+    background-color: var(--standardcolor);
 }
 
-#skills{
-    background-color: red;
+section#skills{
+    background-color: var(--bgcolor);
 }
 
 section#projects{
+    background-color: var(--standardcolor);
+}
+
+section#projects{
+    background-color: var(--bgcolor);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,18 +288,18 @@ section#projects{
 }
 
 #contacts > p{
-    padding: 10px;
+    padding: 5px;
     font-weight: bold;
     transition: .4s ease;
 }
 
 #contacts > p:hover{
-        color: var(--bgcolor);
+        color: white;
 }
 
 footer{
     font-size: 15px;
     text-align: center;
-    color: var(--standardcolor);
+    color: white;
     padding: 10px;
 }

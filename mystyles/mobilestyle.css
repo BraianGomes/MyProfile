@@ -72,18 +72,18 @@ body{
     padding: 5px;
     transition: .3s;
     animation: slideRightNav .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(.2s * var(--bar));
 }
 
 @keyframes slideRightNav {
     0% {
-        transform: translateY(100px);
+        transform: translateY(250px);
         opacity: 0;
     }
 
-    50% {
+    100% {
         transform: translateY(0);
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
@@ -108,16 +108,8 @@ body{
 }
 
 #page1-content > h3{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#page1-content h3:nth-last-of-type(2){
-    margin-bottom: 20px;
-}
-
-#page1-content > h3 > span{
-    color: var(--standardcolor);
+    font-size: 25px;
+    margin-top: 10px;
 }
 
 #page1-content > h1{
@@ -126,9 +118,29 @@ body{
     margin-top: 10px;
 }
 
-#page1-content > p{
-    font-size: 15px;
-    margin-top: 10px;
+#page1-content > h2{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    animation: slideRightSpan 1s ease forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+}
+
+#page1-content > h2 > span{
+    color: var(--standardcolor);
+}
+
+@keyframes slideRightSpan {
+    0% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 div#self{
@@ -142,7 +154,36 @@ div#self > img{
     width: 200px;
     height: 250px;
     border-radius: 10%;
+    animation: zoomAppear 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+    opacity: 0;
 }
+
+@keyframes zoomAppear {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 
 #cv{
     display: inline-block;

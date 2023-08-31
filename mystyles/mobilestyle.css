@@ -26,10 +26,11 @@ body{
     color: white;
 }
 
-header#row2{
+#navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.7em;
     z-index: 100;
     position: fixed;
     top: 0;
@@ -40,13 +41,26 @@ header#row2{
     background: transparent;
 }
 
-header#row2 > img{
+#navbar > img{
     width: 80px;
     height: 80px;
     border-radius: 50%;
     border: 2px solid var(--standardcolor);
-    margin-top: 40px;
-    margin-left: 15px;
+    margin-top: 60px;
+    margin-left: 20px;
+    animation: slideRight 1s ease forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 #navbar > a{
@@ -54,7 +68,7 @@ header#row2 > img{
     font-weight: bold;
     color: var(--standardcolor);
     text-decoration: none;
-    margin-left: 10px;
+    padding: 5px;
     transition: .3s;
 }
 
@@ -75,7 +89,7 @@ header#row2 > img{
 
 #page1-content{
     max-width: 600px;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 #page1-content > h3{
@@ -120,7 +134,7 @@ div#self > img{
     width: 130px;
     height: 50px;
     padding: 12px 28px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: var(--standardcolor);
     border-radius: 45px;
     box-shadow: 0 0 12px var(--standardcolor);

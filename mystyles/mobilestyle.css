@@ -158,6 +158,10 @@ section{
     }
 }
 
+div#self{
+    margin: auto;
+}
+
 div#self> img{
     width: 200px;
     height: 250px;

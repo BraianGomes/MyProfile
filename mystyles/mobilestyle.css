@@ -43,11 +43,11 @@ section{
 
 #navbar{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 0.7em;
+    flex-wrap: nowrap;
+    gap: 1.5em;
     z-index: 100;
     position: fixed;
     top: 0;
@@ -59,7 +59,6 @@ section{
 }
 
 #bgcode{
-    display: inline block;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -69,7 +68,7 @@ section{
 
 @keyframes slideRight {
     0% {
-        transform: translateX(100px);
+        transform: translateY(-100px);
         opacity: 0;
     }
 
@@ -79,13 +78,13 @@ section{
     }
 }
 
-#navbar > a{
+#navbar > div > a{
     display: inline-block;
     font-size: 15px;
     font-weight: bold;
     color: var(--standardcolor);
     text-decoration: none;
-    padding: 2px;
+    padding: 10px;
     transition: .3s;
     animation: slideRightNav .5s ease forwards;
     animation-delay: calc(.2s * var(--bar));
@@ -103,7 +102,7 @@ section{
     }
 }
 
-#navbar > a:hover{
+#navbar > div > a:hover{
     color: white;
 }
 
@@ -121,22 +120,18 @@ section{
 
 #page1-content{
     max-width: 600px;
-    margin-top: 90px;
 }
 
 #page1-content > h3{
     font-size: 25px;
-    margin-top: 10px;
 }
 
 #page1-content > h1{
     font-size: 30px;
     font-weight: bolder;
-    margin-top: 10px;
 }
 
 #page1-content > h2{
-    margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
     animation: slideRightSpan 1s ease forwards;
@@ -186,7 +181,7 @@ div#self> img{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-25px);
+        transform: translateX(-25px);
     }
     100% {
         transform: translateY(0);
@@ -241,9 +236,7 @@ section#projects{
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
-    height: 100vh;
     color: black;
-    height: 20vh;
 }
 
 #social{

@@ -58,9 +58,10 @@ section{
     background: transparent;
 }
 
-#navbar > img{
-    width: 90px;
-    height: 90px;
+#bgcode{
+    display: inline block;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 2px solid var(--standardcolor);
     animation: slideRight .6s ease forwards;
@@ -108,7 +109,8 @@ section{
 
 #page1{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     position: relative;
@@ -230,10 +232,7 @@ div#self> img{
 
 section#about{
     background-color: var(--standardcolor);
-}
-
-section#skills{
-    background-color: var(--bgcolor);
+    height: 100vh;
 }
 
 section#projects{
@@ -242,6 +241,7 @@ section#projects{
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
+    height: 100vh;
     color: black;
     height: 20vh;
 }
@@ -281,7 +281,6 @@ section#projects{
     color: var(--standardcolor);
     background: transparent;
     font-size: 20px;
-    text-decoration: none;
 }
 
 #contacts > p{

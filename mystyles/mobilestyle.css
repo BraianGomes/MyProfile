@@ -61,7 +61,8 @@ section{
     margin-left: 150px;
     border-radius: 50%;
     border: 2px solid var(--standardcolor);
-    animation: zoomAppear 1s ease forwards, coverImage 2s alternate infinite;
+    box-shadow: 0 0 15px var(--standardcolor);
+    animation: coverImage 3s infinite;
     opacity: 0;
 }
 

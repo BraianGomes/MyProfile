@@ -61,8 +61,28 @@ section{
     margin-left: 150px;
     border-radius: 50%;
     border: 2px solid var(--standardcolor);
+    animation: zoomAppear 1s ease forwards, coverImage 2s alternate infinite;
+    opacity: 0;
+}
+
+@keyframes coverImage {
+    0% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        box-shadow: 0 0 30px var(--standardcolor);    
+    }
+}
+
+#bgcode:hover{
+    background-color: var(--standardcolor);
+    color: var(--bgcolor);
+    box-shadow: 0 0 30px var(--standardcolor);
     cursor: pointer;
-    animation: slideRight .6s ease forwards;
 }
 
 #itens{
@@ -82,9 +102,9 @@ section{
     }
 }
 
-#navbar > div > a{
+#navbar > div#itens > a{
     display: inline-block;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     color: var(--standardcolor);
     text-decoration: none;
@@ -106,22 +126,10 @@ section{
     }
 }
 
-#navbar > div > a:hover{
+#navbar > div#itens > a:hover{
     color: white;
 }
 
-/*
-#page1{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    padding: 20px;
-}
-*/
 
 #page1{
     display: grid;
@@ -168,7 +176,9 @@ section{
 }
 
 div#self{
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 div#self> img{

@@ -25,18 +25,18 @@
 
 </head>
 
-<body>
+<body  onresize="changeSize()">
 
     <div id="interface">
 
         <section id="home">
             <header>
                 <nav id="navbar">
-                    <div>
-                        <img id="bgcode" src="imagens/bcodeg.png" alt="My Logo">
-                    </div>
+                    
+                        <img id="bgcode" src="imagens/bcodeg.png" alt="My Logo" onclick="clickMenu()">
+                   
 
-                    <div>
+                    <div id="itens">
                         <a href="index.html" style="--bar:3" id="index">Home</a>
                         <a href="#about" style="--bar:2">About</a>
                         <a href="#skills" style="--bar:1">Skills</a>

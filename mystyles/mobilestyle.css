@@ -23,7 +23,6 @@ body{
     scroll-behavior: smooth;
 }
 
-
 #interface{
     height: 100vh;
     scroll-snap-type: y mandatory;
@@ -42,9 +41,10 @@ section{
 }
 
 #navbar{
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     z-index: 100;
     position: fixed;
     top: 0;
@@ -58,9 +58,16 @@ section{
     width: 80px;
     height: 80px;
     margin-top: 5px;
+    margin-left: 150px;
     border-radius: 50%;
     border: 2px solid var(--standardcolor);
+    cursor: pointer;
     animation: slideRight .6s ease forwards;
+}
+
+#itens{
+    display: none;
+    margin-top: 5px;
 }
 
 @keyframes slideRight {

@@ -54,11 +54,10 @@ section{
     background: transparent;
 }
 
-
-
 #bgcode{
     width: 80px;
     height: 80px;
+    margin-top: 5px;
     border-radius: 50%;
     border: 2px solid var(--standardcolor);
     animation: slideRight .6s ease forwards;

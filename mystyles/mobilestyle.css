@@ -215,26 +215,31 @@ div#self> img{
     }
 }
 
+section#about > p{
+    color: var(--bgcolor);
+    padding: 15px;
+}
+
 #cv{
     display: inline-block;
     width: 130px;
     height: 50px;
     padding: 12px 28px;
     margin-top: 30px;
-    background-color: var(--standardcolor);
+    background-color: var(--bgcolor);
     border-radius: 45px;
-    box-shadow: 0 0 12px var(--standardcolor);
+    box-shadow: 0 0 12px var(--bgcolor);
     font-size: 18px;
-    color: var(--bgcolor);
+    color: white;
     font-weight: bold;
 }
 
 #logos{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 2em;
 }
 
 #logo5{
@@ -243,12 +248,12 @@ div#self> img{
 }
 
 #logo3{
-    width: 100px;
+    width: 90px;
     height: 100px;
 }
 
 #logoj{
-    width: 100px;
+    width: 80px;
     height: 80px;
 }
 

@@ -30,12 +30,9 @@ body{
 }
 
 section{
-    display: flex;
     position: sticky;
     top: 0;
     left: 0;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     scroll-snap-align: start;
 }
@@ -131,11 +128,6 @@ section{
     color: white;
 }
 
-
-#page1{
-    display: grid;
-    grid-template-columns: 400px;
-}
 #page1-content{
     max-width: 600px;
 }
@@ -215,7 +207,12 @@ div#self> img{
     }
 }
 
+section#about{
+    background-color: var(--standardcolor);
+}
+
 section#about > p{
+    width: 800px;
     color: var(--bgcolor);
     padding: 15px;
 }
@@ -236,7 +233,7 @@ section#about > p{
 
 #logos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2em;
@@ -255,10 +252,6 @@ section#about > p{
 #logoj{
     width: 80px;
     height: 80px;
-}
-
-section#about{
-    background-color: var(--standardcolor);
 }
 
 section#projects{

@@ -6,7 +6,10 @@
     box-sizing: border-box;
     font-family: 'Oxygen', sans-serif;
     list-style: none;
+    letter-spacing: 0.7px;
     text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -17,10 +20,8 @@
 
 body{
     width: 100vw;
-    letter-spacing: 0.7px;
     color: white;
     background-color: var(--bgcolor);
-    scroll-behavior: smooth;
 }
 
 #interface{
@@ -30,11 +31,27 @@ body{
 }
 
 section{
+    display: flex;
     position: sticky;
     top: 0;
     left: 0;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     scroll-snap-align: start;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 2em 5%;
+    background-color: var(--bgcolor);
 }
 
 #navbar{
@@ -124,17 +141,15 @@ section{
     }
 }
 
-#navbar > div#itens > a:hover{
+#navbar > div#itens > a:hover,
+#navbar > div#itens > a#active{
     color: white;
 }
 
 #page1{
-    display: flex;
-    grid-template-columns: 450px;
-    justify-content: center;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 400px;
 }
-
 #page1-content{
     max-width: 600px;
 }
@@ -215,27 +230,35 @@ div#self> img{
 }
 
 section#about{
-    background-color: var(--standardcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
 
 section#about > p{
-    width: 800px;
     color: var(--bgcolor);
     padding: 15px;
 }
 
-#cv{
-    display: inline-block;
+.button{
+    display: inline-flex;
     width: 130px;
     height: 50px;
     padding: 12px 28px;
-    margin-top: 30px;
-    background-color: var(--bgcolor);
+    letter-spacing: 1px;
+    background-color: var(--standardcolor);
     border-radius: 45px;
-    box-shadow: 0 0 12px var(--bgcolor);
+    box-shadow: 0 0 12px var(--standardcolor);
     font-size: 18px;
-    color: white;
-    font-weight: bold;
+    color: var(--bgcolor);
+    font-weight: bolder;
+    transition: .5s ease-in;
+}
+
+.button:hover{
+    box-shadow: none;
 }
 
 #logos{
@@ -261,8 +284,11 @@ section#about > p{
     height: 80px;
 }
 
-section#projects{
+section#services{
     background-color: var(--bgcolor);
+}
+
+section#media{
     display: flex;
     flex-direction: column;
     align-items: center;
